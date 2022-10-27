@@ -1,8 +1,6 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 
 public class urinalsFunctions {
@@ -16,10 +14,13 @@ public class urinalsFunctions {
             reader = new BufferedReader(new FileReader(
                     "E:\\ICA8\\src\\urinal.dat"));
             String line = reader.readLine();
+            FileWriter wr = new FileWriter("rule.txt");
             while (line != null && !line.equals("-1")) {
-                System.out.println(countFreeUrinals(line));
+                wr.write(String.valueOf(countFreeUrinals(line)));
+                wr.write("\n");
                 line = reader.readLine();
             }
+            wr.close();
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
