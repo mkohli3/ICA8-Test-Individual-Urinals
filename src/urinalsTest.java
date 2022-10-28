@@ -42,4 +42,9 @@ public class urinalsTest {
         System.out.println("====== Manan Kohli == TEST SIX EXECUTED =======");
         assertEquals(1,urinalsFunctions.writeFile("\\rule.txt"));
     }
+    @Test
+    public void isValidStringTest(){
+        System.out.println("====== Manan Kohli == TEST SEVEN EXECUTED =======");
+        assertEquals(0,urinalsFunctions.isValidString("1"));
+    }
 }

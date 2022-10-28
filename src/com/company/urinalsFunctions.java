@@ -25,7 +25,7 @@ public class urinalsFunctions {
             ifFileEmpty(line); //to check if file is empty or not
             readFile(line);    //to check if file was read
             while (line != null && !line.equals("-1")) {
-                isString(line); //to check if input is string
+                isValidString(line); //to check if input string is valid
                 isBinary(line); //to check if input contains only 1's and 0's
                 wr.write(String.valueOf(countFreeUrinals(line)));
                 wr.write("\n");
@@ -38,7 +38,10 @@ public class urinalsFunctions {
             e.printStackTrace();
         }
     }
-    public static int isString(String line){
+    public static int isValidString(String line){
+        if(line.length()<=1){
+            return 1;
+        }
         return 0;
     }
     public static int ifFileExists(String urinalPath) throws IOException {
