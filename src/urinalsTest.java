@@ -25,4 +25,11 @@ public class urinalsTest {
         System.out.println("====== Manan Kohli == TEST THREE EXECUTED =======");
         assertEquals(1,urinalsFunctions.ifFileEmpty(null));
     }
+    @Test
+    public void ifFileExistsTest() throws IOException {
+        System.out.println("====== Manan Kohli == TEST FOUR EXECUTED =======");
+        String Dir = new java.io.File(".").getCanonicalPath();
+        String expectedPath = Dir + "\\urinal.dat";
+        assertEquals(1,urinalsFunctions.ifFileExists(expectedPath));
+    }
 }

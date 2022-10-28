@@ -45,9 +45,9 @@ public class urinalsFunctions {
         String Dir = new java.io.File(".").getCanonicalPath();
         String pathExpected = Dir + "\\urinal.dat";
         if(pathExpected.equals(urinalPath)){
-            return 1;
+            return 0;
         }
-        return 0;
+        return 1;
     }
     public static int ifFileEmpty(String line){
         if(line==null){
