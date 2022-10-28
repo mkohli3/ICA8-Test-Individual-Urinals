@@ -38,7 +38,6 @@ public class urinalsFunctions {
             e.printStackTrace();
         }
     }
-}
     public static int isString(String line){
         return 0;
     }

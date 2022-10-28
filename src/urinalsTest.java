@@ -15,4 +15,5 @@ public class urinalsTest {
         System.out.println("====== Manan Kohli == TEST ONE EXECUTED =======");
         assertEquals(1, urinalsFunctions.countFreeUrinals("10001"));
     }
+
 }
