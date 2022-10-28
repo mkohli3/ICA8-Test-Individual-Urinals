@@ -10,5 +10,9 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 public class urinalsTest {
-
+    @Test
+    public void countFreeUrinalsTest(){
+        System.out.println("====== Manan Kohli == TEST ONE EXECUTED =======");
+        assertEquals(0, urinalsFunctions.countFreeUrinals("10001"));
+    }
 }
