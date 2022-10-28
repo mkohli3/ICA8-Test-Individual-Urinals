@@ -81,10 +81,10 @@ public class urinalsFunctions {
     public static int isBinary(String line){
         for(int i=0;i<line.length();i++){
             if(line.charAt(i)==1 || line.charAt(i)==0) {
-                return 0;
+                return 1;
             }
         }
-        return 1;
+        return 0;
     }
     public static int countFreeUrinals(String urinals){
         if(urinals.contains("11")) {
