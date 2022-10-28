@@ -15,5 +15,9 @@ public class urinalsTest {
         System.out.println("====== Manan Kohli == TEST ONE EXECUTED =======");
         assertEquals(1, urinalsFunctions.countFreeUrinals("10001"));
     }
-
+    @Test
+    public void isBinary(){
+        System.out.println("====== Manan Kohli == TEST TWO EXECUTED =======");
+        assertEquals(0,urinalsFunctions.isBinary("123"));
+    }
 }
