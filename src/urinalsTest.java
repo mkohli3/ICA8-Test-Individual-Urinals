@@ -32,4 +32,9 @@ public class urinalsTest {
         String expectedPath = Dir + "\\urinal.dat";
         assertEquals(1,urinalsFunctions.ifFileExists(expectedPath));
     }
+    @Test
+    public void ifFileEmptyTest(){
+        System.out.println("====== Manan Kohli == TEST FIVE EXECUTED =======");
+        assertEquals(1,urinalsFunctions.ifFileEmpty(null));
+    }
 }
