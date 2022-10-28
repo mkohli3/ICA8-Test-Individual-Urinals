@@ -70,13 +70,13 @@ public class urinalsFunctions {
                     rulePath));
             String line = reader.readLine();
             if(line==null){
-                return 0;
+                return 1;
             }
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return 1;
+        return 0;
     }
     public static int isBinary(String line){
         for(int i=0;i<line.length();i++){

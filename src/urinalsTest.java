@@ -37,4 +37,9 @@ public class urinalsTest {
         System.out.println("====== Manan Kohli == TEST FIVE EXECUTED =======");
         assertEquals(1,urinalsFunctions.ifFileEmpty(null));
     }
+    @Test
+    public void writeFileTest(){
+        System.out.println("====== Manan Kohli == TEST SIX EXECUTED =======");
+        assertEquals(1,urinalsFunctions.writeFile("\\rule.txt"));
+    }
 }
