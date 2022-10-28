@@ -40,9 +40,9 @@ public class urinalsFunctions {
     }
     public static int isValidString(String line){
         if(line.length()<=1){
-            return 1;
+            return 0;
         }
-        return 0;
+        return 1;
     }
     public static int ifFileExists(String urinalPath) throws IOException {
         String Dir = new java.io.File(".").getCanonicalPath();
