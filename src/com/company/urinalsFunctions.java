@@ -51,9 +51,9 @@ public class urinalsFunctions {
     }
     public static int ifFileEmpty(String line){
         if(line==null){
-            return 0;
+            return 1;
         }
-        return 1;
+        return 0;
     }
     public static int readFile(String line){
         if(line==null){
