@@ -13,6 +13,6 @@ public class urinalsTest {
     @Test
     public void countFreeUrinalsTest(){
         System.out.println("====== Manan Kohli == TEST ONE EXECUTED =======");
-        assertEquals(0, urinalsFunctions.countFreeUrinals("10001"));
+        assertEquals(1, urinalsFunctions.countFreeUrinals("10001"));
     }
 }
