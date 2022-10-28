@@ -20,4 +20,9 @@ public class urinalsTest {
         System.out.println("====== Manan Kohli == TEST TWO EXECUTED =======");
         assertEquals(0,urinalsFunctions.isBinary("123"));
     }
+    @Test
+    public void readFileTest(){
+        System.out.println("====== Manan Kohli == TEST THREE EXECUTED =======");
+        assertEquals(1,urinalsFunctions.ifFileEmpty(null));
+    }
 }
